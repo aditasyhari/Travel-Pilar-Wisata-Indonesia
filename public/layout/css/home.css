@@ -1,0 +1,287 @@
+#home {
+    background: none;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#home-bg-video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+#home-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-overlay #home-text {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+#dark-overlay {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+#wisata {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#wisata #heading {
+    padding-top: 90px;
+}
+
+#wisata #heading h3 {
+    font-weight: 900;
+}
+
+#wisata .carousel-inner {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+
+}
+
+#wisata .carousel-item img {
+    height: 350px;
+}
+
+
+#wisata #threeb {
+    width: 100%;
+    height: 350px;
+}
+
+#wisata #threeb h1 a {
+    color: white;
+    font-size: 72px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    line-height: 1.4em;
+}
+
+#wisata #threeb h1 a:hover {
+    transition: .3s;
+    color: #3A91FF;
+}
+
+#wisata #threeb h1 a span {
+    color: #3A91FF;
+}
+
+#wisata #threeb h1 a:hover span {
+    transition: .3s;
+    color: white;
+}
+
+
+#service {
+    width: 100%;
+}
+
+#service #heading {
+    padding-top: 100px;
+}
+
+#service .img-thumbnail {
+    border: none;
+    width: 300px;
+    height: auto;
+}
+
+
+/* testimonial */
+#testimoni {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 60px;
+}
+#testimoni h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	position: relative;
+	margin: 0 0 50px 0;
+	text-transform: uppercase;
+	display: inline-block;
+}
+#testimoni h2::after {
+	content: "";
+	width: 50%;
+	position: absolute;
+	height: 4px;
+	border-radius: 1px;
+	background: #3A91FF;
+	left: 0;
+	bottom: -20px;
+}
+#testimoni .carousel {
+	margin: 50px auto;
+}
+#testimoni .carousel .item {
+	color: #999;
+	overflow: hidden;
+    min-height: 120px;
+    font-size: 13px;
+}
+#testimoni .carousel .media {
+	position: relative;
+	padding: 0 0 0 20px;
+    padding-bottom: 10px;
+	margin-left: 20px;
+}
+#testimoni .carousel .media img {
+	width: 75px;
+	height: 75px;
+	display: block;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 2px solid #fff;
+}
+#testimoni .carousel .testimonial {
+    color: #fff;
+    position: relative;    
+    background: #9b9b9b;
+	padding: 15px;
+	margin: 0 0 20px 20px;
+}
+#testimoni .carousel .testimonial::before, .carousel .testimonial::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+}
+#testimoni .carousel .testimonial::before {
+    width: 20px;
+    height: 20px;
+	background: #9b9b9b;
+    box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+}
+#testimoni .carousel .testimonial::after {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+}
+#testimoni .carousel .item .row > div:first-child .testimonial {
+	margin: 0 20px 20px 0;
+}
+#testimoni .carousel .item .row > div:first-child .media {
+	margin-left: 0;
+}
+#testimoni .carousel .testimonial p {
+	text-indent: 40px;
+    line-height: 21px;
+	margin: 0;
+}
+#testimoni .carousel .testimonial p::before {
+	content: '\94';
+    color: #fff;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 70px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+#testimoni .carousel .overview {
+	padding: 3px 0 0 15px;
+}
+#testimoni .carousel .overview .details {
+	padding: 5px 0 8px;
+}
+#testimoni .carousel .overview b {
+	text-transform: uppercase;
+	color: #3A91FF;
+}
+
+#testimoni .carousel .carousel-control {
+	width: 30px;
+	height: 30px;
+    background: #666;
+    text-shadow: none;
+	top: 4px;
+}
+#testimoni .carousel-control i {
+	font-size: 16px;
+}
+#testimoni .carousel-control.left {
+	left: auto;
+	right: 40px;
+}
+#testimoni .carousel-control.right {
+	left: auto;
+}
+#testimoni .carousel-indicators {
+	bottom: -80px;
+}
+#testimoni .carousel-indicators li, #testimoni .carousel-indicators li.active {
+	width: 10px;
+    height: 10px;
+	border-radius: 0;
+	margin: 1px 4px;
+}
+#testimoni .carousel-indicators li {	
+    background: #e2e2e2;
+    border: 4px solid #fff;
+}
+#testimoni .carousel-indicators li.active {
+	color: #fff;
+    background: #3A91FF;    
+    border: 5px double;    
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    #home-overlay #home-text {
+        width: 100%;
+    }
+
+    #wisata .carousel-item img {
+        height: 300px;
+    }
+
+    #wisata #threeb {
+        /* margin-top: 30px;
+        height: auto; */
+        display: none;
+    }
+
+    #testimoni h2 {
+        font-size: 20px;
+    }
+}

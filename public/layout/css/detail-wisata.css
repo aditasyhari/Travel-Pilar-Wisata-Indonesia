@@ -1,0 +1,88 @@
+#bg-wisata {
+    position: relative;
+    top: 0;
+    background-size: 100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+
+.side-widget {
+    margin-top: 100px;
+}
+
+.card {
+    width: 100%;
+    height: 190px;
+    box-shadow: 0px 0px 4px black;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 190px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.card-title {
+    height: 80px;
+}
+
+.author {
+    margin-top: -10px;
+}
+
+.zoom {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;  
+}
+
+.zoom:hover .card-img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    #bg-wisata {
+        background-position: top;
+        height: 10vh;
+    }
+
+    .bg-overlay {
+        height: 10vh;
+    }
+
+    .side-widget {
+        margin-top: 0px;
+    }
+
+    .card {
+        height: auto;
+    }
+}
